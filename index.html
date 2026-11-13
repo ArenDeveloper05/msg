@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Armenian:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>SDTM-MSG v2.0 · EN / HY</title>
+<style>
+:root{--bg:#f6f4ee;--page:#fffefb;--ink:#323c47;--mute:#7b8794;--line:#eceff2;--acc:#3a7ca5;--accbg:#f0f6fa;--box:#f7fafc;--th:#f3f6f8;--hd:60px;
+--serif:"Noto Sans","Noto Sans Armenian","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;--sans:"Noto Sans","Noto Sans Armenian","Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+*{box-sizing:border-box}
+html{overflow-anchor:none;scroll-padding-top:calc(var(--hd) + 16px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:17.5px/1.78 var(--serif);letter-spacing:.005em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+html[lang=hy] body{line-height:1.9;font-size:17px;letter-spacing:0}
+header{position:sticky;top:0;z-index:20;height:var(--hd);display:flex;align-items:center;gap:14px;padding:0 24px;background:rgb(255 254 251/.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);font-family:var(--sans)}
+header b{font-size:14px;font-weight:600;color:var(--mute);letter-spacing:.03em}
+#prog{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:var(--acc)}
+.lang{margin-left:auto;display:flex;background:var(--th);border-radius:999px;padding:3px}
+.lang button,#menu{font:500 13px var(--sans);border:0;background:none;color:var(--mute);padding:6px 14px;border-radius:999px;cursor:pointer;transition:.15s}
+.lang button[aria-pressed=true]{background:#fff;color:var(--acc);box-shadow:0 1px 3px rgb(0 0 0/.1);font-weight:600}
+#menu{display:none;border:1px solid var(--line)}
+.wrap{display:grid;grid-template-columns:280px minmax(0,1fr);gap:32px;padding:28px 28px 28px 16px;max-width:1600px;margin:0}
+aside{position:sticky;top:calc(var(--hd) + 32px);align-self:start;max-height:calc(100vh - var(--hd) - 64px);overflow:auto;font:14px/1.45 var(--sans);scrollbar-width:thin}
+aside{padding-left:4px}aside h2{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--mute);margin:0 0 12px 12px}
+aside a{display:block;padding:5px 12px;color:var(--mute);text-decoration:none;border-radius:6px}
+aside a:hover{color:var(--ink);background:var(--accbg)}
+aside a.on{color:var(--acc);background:var(--accbg);font-weight:600}
+aside .l1{margin-top:10px;color:var(--ink);font-weight:600}aside .l2{margin-left:10px}aside .l3{margin-left:20px;font-size:13px}
+main{max-width:980px;width:100%;margin:0 auto;background:var(--page);border-radius:16px;padding:56px clamp(24px,6vw,72px) 40px;min-width:0;box-shadow:0 1px 2px rgb(0 0 0/.03),0 12px 40px rgb(30 50 70/.05)}
+#doc{max-width:720px;margin:0 auto}
+section{padding-top:2px}
+h1,h2,h3{font-family:var(--sans);line-height:1.35;color:#1f2933;font-weight:650;letter-spacing:-.01em}
+h1{font-size:28px;margin:56px 0 16px;padding-bottom:0;border:0}
+h1::after{content:"";display:block;width:44px;height:3px;background:var(--acc);border-radius:2px;margin-top:12px;opacity:.7}
+h2{font-size:22px;margin:40px 0 12px}h3{font-size:17px;margin:30px 0 8px;color:var(--acc)}
+.t{font-size:32px;text-align:center;margin:16px 0 10px}.t::after{margin:14px auto 0}
+.c{text-align:center}
+p{margin:0 0 1.15em;hyphens:manual}
+em,i{font-style:italic}b,strong{font-weight:600}
+.note,.box{background:var(--box);border:1px solid var(--line);border-left:3px solid #a9cbe0;border-radius:10px;padding:14px 20px;margin:24px 0;font-size:16.5px;line-height:1.7}
+.note{border-left-width:1px}.note h4{text-align:center;margin:0 0 6px;font-family:var(--sans)}
+.box .h{display:block;font:600 14px var(--sans);color:var(--acc);margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em}
+table{border-collapse:collapse;margin:18px 0;font:15px/1.5 var(--sans);display:block;overflow-x:auto}
+th,td{border-bottom:1px solid var(--line);padding:9px 14px;text-align:left;vertical-align:top}th{background:var(--th);font-weight:600}
+ul{padding-left:22px;margin:0 0 1.2em}li{margin:.5em 0}li::marker{color:var(--acc)}
+figure{margin:26px 0;text-align:center}
+img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fff}
+.logo{border:0;width:170px}
+figcaption{font:500 13px var(--sans);color:var(--mute);margin-top:8px}
+footer{max-width:720px;margin:56px auto 0;padding-top:14px;border-top:1px solid var(--line);font:12px var(--sans);color:var(--mute)}
+#fb{max-width:520px;margin:80px auto;padding:24px;border:1px dashed var(--acc);border-radius:12px;font-family:var(--sans);text-align:center}
+@media(max-width:1100px){.wrap{grid-template-columns:240px minmax(0,1fr);gap:20px}}
+@media(max-width:900px){
+:root{--hd:54px}
+body{font-size:17px;line-height:1.75}
+header{padding:0 max(12px,env(safe-area-inset-right)) 0 max(12px,env(safe-area-inset-left));gap:8px}
+header b{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.lang button{padding:7px 10px;font-size:12px}
+#menu{display:block;width:40px;height:36px;padding:0;font-size:18px}
+.wrap{grid-template-columns:1fr;padding:10px 0 0;gap:0}
+main{border-radius:0;box-shadow:none;padding:28px max(18px,env(safe-area-inset-left)) 32px max(18px,env(safe-area-inset-right))}
+aside{display:block;position:fixed;top:var(--hd);bottom:0;left:0;width:min(84vw,320px);max-height:none;background:#fff;z-index:25;padding:16px 12px calc(16px + env(safe-area-inset-bottom));transform:translateX(-102%);transition:transform .22s ease;box-shadow:4px 0 24px rgb(0 0 0/.12)}
+body.nav aside{transform:none}
+aside a{padding:10px 12px;font-size:15px}
+body.nav::after{content:"";position:fixed;inset:var(--hd) 0 0 0;background:rgb(20 30 40/.35);z-index:20}
+h1{font-size:23px;margin-top:40px}h2{font-size:19px}h3{font-size:16px}.t{font-size:24px}
+.note,.box{padding:12px 14px;font-size:16px;margin:18px 0}
+figure{margin:20px -6px}
+figure img{width:100%}
+.logo{width:130px}
+table{font-size:13px}th,td{padding:7px 9px}
+}
+@media(max-width:380px){header b{display:none}}
+</style>
+</head>
+<body>
+<header><button id="menu" aria-label="Menu">☰</button><b id="ttl">SDTM-MSG v2.0</b>
+<div class="lang" role="group" aria-label="Language"><button data-l="en" aria-pressed="true">🇬🇧 English</button><button data-l="hy" aria-pressed="false">🇦🇲 Հայերեն</button></div><i id="prog"></i></header>
+<div id="fb" hidden><p>Browsers block <code>fetch()</code> on local files. Select <b>content.json</b> to continue, or serve this folder over HTTP.</p><input type="file" id="file" accept=".json"></div>
+<div class="wrap"><aside><h2 data-ui="contents">Contents</h2><nav id="toc"></nav></aside><main><div id="doc"></div><footer id="ft"></footer></main></div>
+<script>
+(() => {
+'use strict';
+const $ = (s, r = document) => r.querySelector(s), HD = 64;
+const store = { get: k => { try { return localStorage.getItem(k) } catch { return null } }, set: (k, v) => { try { localStorage.setItem(k, v) } catch {} } };
+let lang = 'en', ui = {}, rows = [], IM = {};
+
+const load = async () => {
+  try { const r = await fetch('content.json'); if (!r.ok) throw 0; return await r.json(); }
+  catch { $('#fb').hidden = false; return new Promise(ok => { $('#file').onchange = async e => { $('#fb').hidden = true; ok(JSON.parse(await e.target.files[0].text())); }; }); }
+};
+
+const build = d => {
+  ui = d.ui; IM = d.images || {}; $('#ft').textContent = d.footer;
+  const doc = document.createDocumentFragment(), toc = document.createDocumentFragment();
+  rows = d.sections.map(s => {
+    const el = document.createElement('section'); el.id = s.id;
+    let hd = null, a = null;
+    if (s.lvl) { hd = document.createElement('h' + s.lvl); hd.className = 'hd'; el.append(hd);
+      a = document.createElement('a'); a.href = '#' + s.id; a.className = 'l' + s.lvl; toc.append(a); }
+    const bd = document.createElement('div'); bd.className = 'bd'; el.append(bd); doc.append(el);
+    return { s, el, hd, bd, a };
+  });
+  $('#doc').append(doc); $('#toc').append(toc);
+};
+
+const apply = l => {
+  lang = l; document.documentElement.lang = l; store.set('lang', l);
+  document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', b.dataset.l === l));
+  document.querySelectorAll('[data-ui]').forEach(e => e.textContent = ui[e.dataset.ui][l]);
+  rows.forEach(({ s, hd, bd, a }) => {
+    if (hd) hd.textContent = a.textContent = s.title[l];
+    bd.innerHTML = s.body[l];
+    bd.querySelectorAll('img[data-img]').forEach(i => { i.src = IM[i.dataset.img]; });
+  });
+  $('#ttl').textContent = ui.doc[l];
+};
+
+// Reading-position anchor: remember which block sits at the top of the viewport (by section + index) and its offset.
+const blocks = el => [...el.querySelectorAll(':scope > .hd, :scope > .bd > *')];
+const anchor = () => {
+  for (const r of rows) { const b = blocks(r.el);
+    for (let i = 0; i < b.length; i++) { const q = b[i].getBoundingClientRect();
+      if (q.bottom > HD + 4) return { r, i, top: q.top }; } }
+  return null;
+};
+const restore = a => { const el = a && blocks(a.r.el)[a.i]; if (el) scrollBy(0, el.getBoundingClientRect().top - a.top); };
+
+const setLang = l => {
+  if (l === lang) return;
+  const a = anchor(); apply(l); restore(a);
+  requestAnimationFrame(() => restore(a));   // re-correct after font/layout settle
+};
+
+let tick = false;
+const onScroll = () => { if (tick) return; tick = true; requestAnimationFrame(() => {
+  tick = false;
+  const h = document.documentElement, max = h.scrollHeight - innerHeight;
+  $('#prog').style.width = (max > 0 ? scrollY / max * 100 : 0) + '%';
+  let cur = null; for (const r of rows) { if (r.a && r.el.getBoundingClientRect().top <= HD + 20) cur = r; }
+  rows.forEach(r => r.a && r.a.classList.toggle('on', r === cur));
+  if (cur) { const n = $('aside'), q = cur.a.getBoundingClientRect(), p = n.getBoundingClientRect();
+    if (q.top < p.top || q.bottom > p.bottom) n.scrollTop += q.top - p.top - 60; }
+}); };
+
+const go = id => { const t = document.getElementById(id); if (t) { t.scrollIntoView(); history.replaceState(null, '', '#' + id); } };
+
+load().then(d => {
+  build(d);
+  const saved = store.get('lang'); apply(saved === 'hy' ? 'hy' : 'en');
+  document.querySelector('.lang').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setLang(b.dataset.l); });
+  $('#toc').addEventListener('click', e => { const a = e.target.closest('a'); if (!a) return;
+    e.preventDefault(); document.body.classList.remove('nav'); go(a.getAttribute('href').slice(1)); });
+  $('#menu').onclick = () => document.body.classList.toggle('nav');
+  document.addEventListener('click', e => { if (document.body.classList.contains('nav') && !e.target.closest('aside,#menu')) document.body.classList.remove('nav'); });
+  addEventListener('keydown', e => { if (e.key === 'Escape') document.body.classList.remove('nav'); });
+  addEventListener('scroll', onScroll, { passive: true });
+  if (location.hash) go(decodeURIComponent(location.hash.slice(1)));
+  onScroll();
+});
+})();
+</script>
+</body>
+</html>
